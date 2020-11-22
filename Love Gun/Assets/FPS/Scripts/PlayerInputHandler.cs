@@ -40,9 +40,10 @@ public class PlayerInputHandler : MonoBehaviour
 
     public Vector3 GetMoveInput()
     {
-        if (CanProcessInput())
+        if (CanProcessInput() && Input.GetMouseButton(1))
         {
-            Vector3 move = new Vector3(Input.GetAxisRaw(GameConstants.k_AxisNameHorizontal), 0f, Input.GetAxisRaw(GameConstants.k_AxisNameVertical));
+            Vector3 move = new Vector3(0f, 0f, 1f);
+
 
             // constrain move input to a maximum magnitude of 1, otherwise diagonal movement might exceed the max move speed defined
             move = Vector3.ClampMagnitude(move, 1);
