@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bot A
+  - Bot B
+  - Bot C
+  - Bot D
+  - Bot E
+  - Bot F
+  - Bot G
+  - Bot H
+  - Bot I
+  - Door1
+  - Door2
   layers:
   - Default
   - TransparentFX
