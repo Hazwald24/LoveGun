@@ -8,7 +8,7 @@ public class Doors : MonoBehaviour
     private bool BotADead = false;
     private bool BotBDead = false;
     private bool BotCDead = false;
-
+    public AudioSource playSound;
 
 
     // Update is called once per frame
@@ -22,7 +22,10 @@ public class Doors : MonoBehaviour
         { BotCDead = true; }
 
         if (BotADead && BotBDead && BotCDead)
-        { Destroy(GameObject.FindWithTag("Door1")); }
+        { Destroy(GameObject.FindWithTag("Door1"));
+            playSound.Play();
+        }
     }
-  
+    
+    
 }
