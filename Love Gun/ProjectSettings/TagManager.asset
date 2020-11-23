@@ -15,6 +15,11 @@ TagManager:
   - Bot I
   - Door1
   - Door2
+  - Trig1
+  - Trig2
+  - Trig3
+  - Trig4
+  - Trig5
   layers:
   - Default
   - TransparentFX

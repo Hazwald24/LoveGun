@@ -24,6 +24,7 @@ public class Doors : MonoBehaviour
         if (BotADead && BotBDead && BotCDead)
         { Destroy(GameObject.FindWithTag("Door1"));
             playSound.Play();
+            playSound.Play();
         }
     }
     
